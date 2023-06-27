@@ -1,5 +1,5 @@
 let clearYouTubeMusicPlaylist = async function () {
-    document.getElementsByTagName("tp-yt-paper-icon-button")[6].click();
+    document.getElementsByTagName("tp-yt-paper-icon-button")[23].click();
 
     await setTimeout(() => {
         console.log("waiting")
