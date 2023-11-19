@@ -1,0 +1,12 @@
+const videoArray = document.getElementsByClassName("yt-core-image--fill-parent-height yt-core-image--fill-parent-width yt-core-image yt-core-image--content-mode-scale-aspect-fill yt-core-image--loaded")
+const result = []
+for (const element of videoArray) {
+    const videoTitle = element.parentNode.parentNode.parentNode.parentNode.querySelector("#video-title").innerText
+    const videoID = element.parentNode.parentNode.parentNode.parentNode.querySelector("a").href
+    result.push([videoTitle, videoID.slice(32, 43)])
+    console.log(result)
+}
+
+
+
+
