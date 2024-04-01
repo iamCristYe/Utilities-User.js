@@ -4,8 +4,16 @@ for (const element of videoArray) {
     const videoTitle = element.parentNode.parentNode.parentNode.parentNode.querySelector("#video-title").innerText
     const videoID = element.parentNode.parentNode.parentNode.parentNode.querySelector("a").href
     result.push([videoTitle, videoID.slice(32, 43)])
-    console.log(result)
+    // console.log(result)
+    for (const element of result) {
+    console.log(element[0], element[1])
+    }
 }
+console.log(result)
+for (const element of result) {
+    console.log(element[0], element[1])
+}
+
 
 
 
