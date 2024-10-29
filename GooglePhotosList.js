@@ -80,7 +80,7 @@ const main = async () => {
         } catch (error) {
             console.error('Error in getPhotoArray:', error);
         }
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Optional delay to avoid rapid looping
+        await new Promise(resolve => setTimeout(resolve, 2000)); // Optional delay to avoid rapid looping
     }
 };
 
